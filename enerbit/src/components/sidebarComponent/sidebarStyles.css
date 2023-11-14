@@ -1,0 +1,62 @@
+.sidebarComponent{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 100vh;
+    max-width: 300px;
+}
+.sidebarComponent img{
+    padding: 64px 17px;
+}
+
+.Sidebar{
+    height: 100%;
+    width: 300px;
+  }
+  .SidebarList {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .SidebarList .SidebarRow {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    list-style: none;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--neutral-500);
+  }
+  
+  .SidebarList .SidebarRow.active {
+    background-color: var(--secondary-naranjaenerbit);
+    color: var(--bg-1);
+    border-radius: 0px 8px 8px 0px;
+  }
+  
+  .SidebarRow #sidebar-icon{
+    flex:20%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .SidebarRow #sidebar-title{
+    flex:80%;
+    
+  }
+  
+  .SidebarList .SidebarRow:hover{
+    cursor:pointer;
+  }
+
+.Sidebuttom{
+    font-size: 20px;
+  }

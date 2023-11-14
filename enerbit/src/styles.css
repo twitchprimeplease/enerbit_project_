@@ -1,0 +1,21 @@
+:root{
+    --primary-moradoenerbit:#53358E;
+    --primary-moradoenerbit-100:#D4CBE4;
+    --primary-moradoenerbit-150:#C4B9DA;
+    --primary-moradoenerbit-700:#322055;
+    --secondary-naranjaenerbit: #ED7004;
+    --secondary-naranjaenerbit-150:#FFD8B3;
+    --tertiary-fucsuiaenerbir: #EE2C82;
+    --state-error:#F04438;
+    --state-information:#3B82F6;
+    --state-warning: #F79009;
+    --state-green:#0D7042;
+    --bg-1:#FFF;
+    --bg-2: #F2F4F7;
+    --neutral-300:#C2C6CE;
+    --neutral-500:#667085;
+    --neutral-600:#525A6A;
+    --neutral-900:#14161B;
+    --spacing-spacing-small: 16px;
+
+}
