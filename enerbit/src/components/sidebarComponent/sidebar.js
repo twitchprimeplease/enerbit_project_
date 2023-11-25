@@ -3,6 +3,7 @@ import '../../App.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { SidebarData } from './sidebarData.js'
 import logoEnerbit from '../../images/Logo-enerBit 2.svg'
+import { NavLink } from 'react-router-dom';
 
 function Sidebar() {
   return (
@@ -12,11 +13,20 @@ function Sidebar() {
         {SidebarData.map((val, key)=>{
         return(
           <li key={key} 
-          className={`SidebarRow ${window.location.pathname === val.link ? 'active' : ''}`}
-          onClick={() => {window.location.pathname = val.link}}
+          className={`SidebarRow`}
+          // onClick={() => {window.location.pathname = val.link}}
           >
-            <div id='sidebar-icon'>{val.icon}</div>{" "}
-            <div id='sidebar-title'>{val.title}</div>
+           
+           <NavLink to={val.link} className={({ isActive, isPending }) =>
+                      isActive
+                        ? "active"
+                        : isPending
+                        ? "pending"
+                        : ""
+                    }>
+              <div id='sidebar-icon'>{val.icon}</div>{" "}
+              <div id='sidebar-title'>{val.title}</div>
+              </NavLink>
           </li>
         )
       })}

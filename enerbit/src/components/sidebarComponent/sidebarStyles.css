@@ -4,14 +4,22 @@
     align-items: left;
     height: 100vh;
     max-width: 300px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
+    position: static;
+
 }
 .sidebarComponent img{
     padding: 64px 17px;
+    
 }
 
 .Sidebar{
     height: 100%;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
   }
   .SidebarList {
     height: auto;
@@ -23,7 +31,7 @@
     padding: 0;
   }
   
-  .SidebarList .SidebarRow {
+  .SidebarList .SidebarRow a{
     width: 90%;
     height: fit-content;
     display: flex;
@@ -32,24 +40,26 @@
     list-style: none;
     justify-content: center;
     font-size: 24px;
+    font-style: normal;
     font-weight: 500;
     color: var(--neutral-500);
+    
   }
   
-  .SidebarList .SidebarRow.active {
+  .SidebarList .SidebarRow a.active{
     background-color: var(--secondary-naranjaenerbit);
-    color: var(--bg-1);
+    color: var(--bg-1) !important;
     border-radius: 0px 8px 8px 0px;
   }
   
-  .SidebarRow #sidebar-icon{
-    flex:20%;
+  .SidebarRow a #sidebar-icon {
+    flex:30%;
     display: grid;
     place-items: center;
   }
   
-  .SidebarRow #sidebar-title{
-    flex:80%;
+  .SidebarRow a #sidebar-title {
+    flex:70%;
     
   }
   
@@ -57,6 +67,16 @@
     cursor:pointer;
   }
 
-.Sidebuttom{
+  .SidebarList  .SidebarRow #sidebar-title a{
     font-size: 20px;
   }
+
+  .SidebarRow a{
+    text-decoration: none;
+
+  }
+
+  .SidebarRow.bottom a{
+    font-size: 20px;
+  }
+

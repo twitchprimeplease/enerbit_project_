@@ -3,7 +3,7 @@ import React from 'react'
 export let SidebarData = [
     {title: "Inicio", 
     icon:<i className='bi bi-house-door'></i>, 
-    link:"/inicio"},
+    link:""},
     
     {title: "Panel", 
     icon:<i className='bi bi-graph-up-arrow'></i>, 

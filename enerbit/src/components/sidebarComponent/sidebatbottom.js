@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../App.css'
 import './sidebarStyles.css';
+import { NavLink } from 'react-router-dom';
 
 let SidebarData = [
     {title: "Centro de Ayuda", 
@@ -20,11 +21,18 @@ function Sidebatbottom() {
         {SidebarData.map((val, key)=>{
         return(
           <li key={key} 
-          className={`SidebarRow ${window.location.pathname === val.link ? 'active' : ''}`}
-          onClick={() => {window.location.pathname = val.link}}
+          className={`SidebarRow bottom`}
           >
+            <NavLink to={val.link} className={({ isActive, isPending }) =>
+                      isActive
+                        ? "active"
+                        : isPending
+                        ? "pending"
+                        : ""
+                    }>
             <div id='sidebar-icon'>{val.icon}</div>{" "}
             <div id='sidebar-title'>{val.title}</div>
+            </NavLink>
           </li>
         )
       })}

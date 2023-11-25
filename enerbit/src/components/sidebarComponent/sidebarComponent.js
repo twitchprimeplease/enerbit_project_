@@ -8,7 +8,7 @@ function SidebarComponent() {
   return (
     <div className='sidebarComponent'>
         <SideBar className="Sidebar"/>
-        <Sidebatbottom />
+        <Sidebatbottom id='buttom'/>
     </div>
   )
 }
