@@ -1,0 +1,72 @@
+#preview-factura-estado {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding: 12px 24px ;
+    align-items: center;
+    text-align: start;
+    color: var(--neutral-900);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 108.5%; 
+    border-radius: 16px;
+    background: var(--bg-1);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+    height: 100%;
+}
+
+#preview-factura-estado .estado-factura{
+    padding: 10px 16px;
+    border-radius: 52px;
+    text-align: center;
+}
+
+#preview-factura-estado .negrilla {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+#preview-factura-estado .estado-factura,
+#preview-factura-estado .sede,
+#preview-factura-estado .energia,
+#preview-factura-estado .fecha,
+#preview-factura-estado .total {
+    flex: 1;
+}
+
+#preview-factura-estado .estado-factura.sin-pagar {
+    background: rgba(240, 68, 56, 0.25);
+    color: var(--state-error);
+    font-family: Helvetica Neue LT Std;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+    }
+
+#preview-factura-estado .estado-factura.pendiente {
+    background: rgba(247, 144, 9, 0.15);
+    color: var(--state-warning, #F79009);
+    font-family: Helvetica Neue LT Std;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+#preview-factura-estado .estado-factura.pagado {
+    background: rgba(18, 183, 106, 0.25);
+    color: #0D7042;
+    font-family: Helvetica Neue LT Std;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+}
+
+
+
+
+

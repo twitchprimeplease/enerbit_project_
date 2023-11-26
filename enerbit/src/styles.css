@@ -8,6 +8,7 @@
     --primary-moradoenerbit:#53358E;
     --primary-moradoenerbit-100:#D4CBE4;
     --primary-moradoenerbit-150:#C4B9DA;
+    --primary-moradoenerbit-400: #A3A9B6;
     --primary-moradoenerbit-700:#322055;
     --secondary-naranjaenerbit: #ED7004;
     --secondary-naranjaenerbit-150:#FFD8B3;
@@ -45,4 +46,9 @@
     opacity: 0.25;
     transition: opacity 200ms;
     transition-delay: 200ms;
+  }
+
+  #inicio {
+    background-color: var(--bg-2);
+    height: 100%;
   }

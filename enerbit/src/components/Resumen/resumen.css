@@ -1,0 +1,141 @@
+.título-sección{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#estado-factuas-facturas{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+}
+
+.título-sección h4{
+    color: #322055;
+font-family: Helvetica Neue LT Std;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; 
+margin: 0;
+}
+
+.título-sección h4 i{
+    color: var(--neutral-500);
+    
+}
+
+.estado-alertas{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+}
+
+#Estado-factuas{
+    flex: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+#Alertas {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#alertas-stack{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    height: 100%;
+}
+
+.título-sección p{
+    color: var(--secondary-naranjaenerbit);
+    margin: 0;
+    font-family: Helvetica Neue LT Std;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+}
+.inicio-content{
+    padding: 40px 110px;
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+
+
+.consumo-actividades{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+#consumo-container{
+    flex: 70%;
+    height: 100%;
+    
+}
+
+#acticidad-container {
+    flex: 30%;
+    height: 100%;
+}
+
+.title-consumo-actividades{
+    margin:0;
+    color: #322055;
+    font-family: Helvetica Neue LT Std;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 28.8px */
+}
+
+.consumo-dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    }
+    
+    .prom-mes { grid-area: 1 / 1 / 3 / 3; }
+    .prom-al-mes { grid-area: 1 / 3 / 3 / 5; }
+    .descubre { grid-area: 3 / 1 / 5 / 5; }
+
+    .prom {
+        padding: 32px;
+        text-align: center;
+        border-radius: var(--corners-corner-large, 16px);
+        background: #FFF;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    .promedio-para{
+        color: var(--neutral-500, #667085);
+        text-align: center;
+        font-family: Helvetica Neue LT Std;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 92%; 
+    }
+
+    .prom-info{
+        color: var(--primary-700, #322055);
+        font-family: Helvetica Neue LT Std;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 57.6px */
+    }

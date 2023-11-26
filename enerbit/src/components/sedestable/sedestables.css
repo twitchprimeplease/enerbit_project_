@@ -1,0 +1,26 @@
+thead .table-title{
+    color: #322055;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+}
+
+thead .btn-primary{
+    background-color: var(--bg-1);
+    color: #322055;
+    border-color: var(--primary-moradoenerbit-400);
+}
+
+thead .btn-primary:hover{
+    background-color: var(--primary-moradoenerbit-700);
+    color: var(--bg-1);
+    border-color: var(--bg-1);
+}
+tbody td{
+    color: var(--neutral-900) !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}

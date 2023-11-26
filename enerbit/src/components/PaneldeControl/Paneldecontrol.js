@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import { StackHorizontalbars } from '../graphs/stackHorizontalBars';
+import SedesTable from '../sedestable/sedestable.js';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import LinesChart from '../graphs/linesCharts.js';
 import Barchart from '../graphs/BarChart.js';
+import BarChart2 from '../graphs/BarChart2.js';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
+
 import './PaneldeControl.css';
 
 function Paneldecontrol() {
@@ -81,8 +84,21 @@ function Paneldecontrol() {
             </Form>
             <Barchart />
             </div>
-            <div className="div4 panel-slot"> </div>
-            <div className="div5 panel-slot"> </div>
+            <div className="div4 panel-slot">
+                <div className='slot-title'>
+                    <h2>Gastos Generales</h2>
+                    <p>Últimos meses</p>
+                </div>
+                <BarChart2 />    
+            </div>
+            
+            <div className="div5 panel-slot">
+                <div className='sedes-title'>
+                    <h2>Sedes</h2>
+                    <p>Ver detalles <i className='bi bi-arrow-right'></i></p>
+                </div>
+                <SedesTable />
+            </div>
         </Container>
         </div>
     </>

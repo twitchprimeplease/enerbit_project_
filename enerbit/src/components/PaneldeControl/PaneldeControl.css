@@ -92,6 +92,54 @@ line-height: 120%; /* 48px */
     line-height: 120%;
 }
 
+.slot-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+}
+
+.slot-title h2{
+    margin:0;
+    color:  #322055;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+}
+
+.slot-title p {
+    color:  #667085;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.sedes-title{
+    display: flex ;
+    flex-direction: row;
+    color: #322055;
+    justify-content: space-between;
+}
+
+.sedes-title h2{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+    margin: 0;
+}
+
+.sedes-title p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-decoration-line: underline;
+    margin: 0;
+}
+
 
 
 #search-sedes .dropdown button{
@@ -114,8 +162,12 @@ line-height: 120%; /* 48px */
 }
     .div2 { grid-area: 3 / 1 / 6 / 4; }
     .div3 { grid-area: 1 / 4 / 6 / 6; }
-    .div4 { grid-area: 6 / 1 / 11 / 3; }
-    .div5 { grid-area: 6 / 3 / 11 / 6; }
+    .div4 { grid-area: 6 / 1 / 11 / 3;
+        padding: 24px 32px;
+    }
+    .div5 { grid-area: 6 / 3 / 11 / 6; 
+        padding: 24px 32px;
+    }
 
     .div2 ul li.nav-item button.active {
         background-color: var(--primary-moradoenerbit);

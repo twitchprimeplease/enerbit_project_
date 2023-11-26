@@ -1,0 +1,78 @@
+.estado-alerta {
+    display: flex;
+    flex-direction: row;
+    padding-right: 26px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--bg-1);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+    height: 100%;
+}
+
+#prev-alerta-content{
+    flex:95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:24px;
+    padding: 12px 8px;
+} 
+
+.head-alerta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 80%;
+    gap: 16px;
+}
+.follow-arrow{
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    color: var(--moradoelnerbit-700);
+    font-size: 25px;
+}
+
+.icono-alerta{
+    flex: 20%;
+    width: auto;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    color: var(--bg-1);
+    font-size: 20px;
+}
+
+.alerta-texto{
+    flex: 80%;
+    color: var(--neutral-900);
+    font-family: Helvetica Neue LT Std;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 112%; 
+}
+
+#prev-alerta-content .icono-alerta {
+    padding: 10px;
+    height: min-content;
+}
+
+.estado-alerta .solo-un-color{
+    flex: 5%;
+}
+
+.error .solo-un-color, 
+.error #prev-alerta-content .icono-alerta{
+    background-color: var(--state-error);
+}
+
+.warning .solo-un-color,
+.warning #prev-alerta-content .icono-alerta {
+    background-color: var(--state-warning);
+}
+
+.cautions .solo-un-color,
+.cautions #prev-alerta-content .icono-alerta{
+    background-color: var(--state-information);
+}
