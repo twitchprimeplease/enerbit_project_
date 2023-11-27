@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Image from 'react-bootstrap/Image';
@@ -27,8 +28,9 @@ function NavBarComponent() {
             <i class="bi bi-bell"></i>
             <div class="notificacion">4</div>
                 </div>
-            </div> 
-        <Image src={ProfilePhoto} roundedCircle />
+            </div>
+            <Nav.Link href="/perfil"><Image src={ProfilePhoto} roundedCircle /></Nav.Link> 
+        
         </div>
     </Navbar>
     </>);

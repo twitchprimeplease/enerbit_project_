@@ -40,13 +40,13 @@ function Paneldecontrol() {
                 <Tab eventKey="colombia" title="Colombia" disabled>
 
                 </Tab>
-                <Tab eventKey="home" title="Home">
+                <Tab eventKey="home" title="Medellín">
                     <LinesChart />
                 </Tab>
-                <Tab eventKey="profile" title="Profile">
+                <Tab eventKey="profile" title="Cali">
                     <LinesChart />
                 </Tab>
-                <Tab eventKey="longer-tab" title="Loooonger Tab">
+                <Tab eventKey="longer-tab" title="Bogotá">
                     <LinesChart />
                 </Tab>
                 <Tab eventKey="time" title="1:33 p.m" disabled>

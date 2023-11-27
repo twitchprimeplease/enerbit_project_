@@ -1,0 +1,15 @@
+.navbar-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-title{
+    flex: 90%;
+    color: var(--primary-700, #322055);
+
+    font-family: Helvetica Neue LT Std;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}

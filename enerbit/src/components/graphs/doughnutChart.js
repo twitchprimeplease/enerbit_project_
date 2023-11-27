@@ -16,6 +16,8 @@ const data = {
 };
 
 const options = {
+  cutout: '90%', 
+   borderRadius:15,
   responsive: true,
   plugins: {
     datalabels: {
@@ -34,8 +36,9 @@ const options = {
 const DoughnutChart = () => {
   return (
     <div>
-      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>+30%</h2>
+      
       <Doughnut data={data} options={options} />
+      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>+30%</h2>
     </div>
   );
 };

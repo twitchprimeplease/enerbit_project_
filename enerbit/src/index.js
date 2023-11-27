@@ -9,6 +9,7 @@ import Root from "./routes/root";
 import Home from "./routes/inicio.jsx"
 import Panel from "./routes/panel.jsx"
 import Facturas from "./routes/facturas.jsx";
+import Perfil from "./routes/perfil.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
         path: "facturas",
         element: <Facturas />,
       },
+      {
+        path: "Perfil",
+        element: <Perfil />,
+      }
     ],
   },
   
