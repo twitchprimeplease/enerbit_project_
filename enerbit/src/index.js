@@ -10,6 +10,10 @@ import Home from "./routes/inicio.jsx"
 import Panel from "./routes/panel.jsx"
 import Facturas from "./routes/facturas.jsx";
 import Perfil from "./routes/perfil.jsx";
+import Pagar from "./routes/pagar.jsx";
+import PayMethod from "./routes/paymethod.jsx";
+import Confirmation from "./routes/confirmation.jsx";
+import ConfirmationFactura from "./routes/confirmaFacturas.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,10 +35,28 @@ const router = createBrowserRouter([
       {
         path: "Perfil",
         element: <Perfil />,
-      }
+      },
+      
     ],
   },
-  
+  {
+    path: "Pagar",
+    element: <Pagar />,
+    children: [
+      {
+        path: "",
+        element: <ConfirmationFactura />,
+      },
+      {
+        path: "PayMethod",
+        element: <PayMethod />,
+      },
+      {
+        path: "Confirmation",
+        element: <Confirmation />,
+      }
+    ]
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

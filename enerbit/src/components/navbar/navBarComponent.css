@@ -29,7 +29,7 @@
 }
 
 #search-top-bar span.input-group-text{
-     background-color: var(--bg-1);
+    background-color: var(--bg-1);
      
 }
 
@@ -59,4 +59,8 @@
     min-width: 16px;
     width: 16px;
     height: 16px;
+  }
+
+  .ener-pay-logo{
+    flex: 90%;
   }

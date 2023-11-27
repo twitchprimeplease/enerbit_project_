@@ -1,0 +1,226 @@
+.Facturas-container{
+    background-color:var(--bg-2);
+    padding: 32px 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+.facturas-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#facturas-header-buttons.mb-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: var(--spacing-spacing-medium, 24px);
+    margin: 0 !important;
+}
+
+#facturas-header-buttons Button{
+    flex:1;
+    margin: 0;
+    border-radius: var(--corners-corner-medium, 8px);
+    color: var(--bg-1, #FFF);
+    font-family: Helvetica Neue LT Std;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+}
+
+.facturas-header-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: var(--spacing-spacing-medium, 24px);
+    align-items: center;
+
+}
+
+.facturas-header-right *{
+    flex: 1;
+}
+
+.facturas-header-right h1{
+    color: var(--primary-700, #322055);
+
+/* Heading/H1 */
+font-family: Helvetica Neue LT Std;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 48px */
+}
+
+.facturas-header-right button{
+    border-radius: 4px;
+    border: 1px solid var(--neutral-400, #A3A9B6);
+    background: var(--bg-1, #FFF);
+    color: var(--primary-700, #322055);
+    font-family: Helvetica Neue LT Std;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; 
+}
+
+td #preview-factura-estado {
+    background-color:transparent;
+    box-shadow: none;
+    flex: 95%;
+}
+
+.check-factura{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px !important; 
+}
+
+.check-factura-buttons{
+    vertical-align: middle;
+}
+
+.check-factura-buttons .primary-button-factura{
+    border-radius: var(--corners-corner-medium, 8px);
+    background: var(--secondary-naranjaenerbit, #ED7004);
+    border: 1px solid var(--secondary-naranjaenerbit, #ED7004);
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    color: var(--bg-1, #FFF);
+    font-family: Helvetica Neue LT Std;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+}
+
+.check-factura-buttons .primary-button-factura:hover{
+    border-radius: var(--corners-corner-medium, 8px);
+    border: 1px solid var(--secondary-naranjaenerbit, #ED7004);
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: var(--bg-1, #FFF);
+    color: var(--secondary-naranjaenerbit, #ED7004);
+    font-family: Helvetica Neue LT Std;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+}
+
+.outline-primary-button-factura{
+    border-radius: var(--corners-corner-medium, 8px);
+    border: 1px solid var(--secondary-naranjaenerbit, #ED7004);
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: var(--secondary-naranjaenerbit, #ED7004);
+    font-family: Helvetica Neue LT Std;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+}
+
+.outline-primary-button-factura:hover{
+    border-radius: var(--corners-corner-medium, 8px);
+    background: var(--secondary-naranjaenerbit, #ED7004);
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    color: var(--bg-1, #FFF);
+    font-family: Helvetica Neue LT Std;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    border: 1px solid var(--secondary-naranjaenerbit, #ED7004);
+}
+
+.table-section-heading{
+    color: var(--neutral-600, #525A6A);
+
+    /* Heading/H5 */
+    font-family: Helvetica Neue LT Std;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+
+.facturas-table-header{
+    padding: 32px !important;
+    align-items: center;
+    vertical-align: middle;
+    flex-shrink: 0;
+    border-radius: var(--corners-corner-medium, 8px);
+    background-color: var(--primary-000, #E4DEEF) !important;
+    color: var(--primary-700, #322055) !important;
+    font-family: Helvetica Neue LT Std;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 19.2px */
+}
+
+.facturas-search{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+}
+
+.filtros-dropdow{
+    border-color: transparent;
+    border-bottom: 1px solid var(--gray-2, #BEBEBE);
+    padding: 13px var(--corners-corner-medium, 8px) 0px 0px;
+    border-radius: 0%;
+    color: var(--primary-700, #322055);
+    font-family: Helvetica Neue LT Std;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 19.2px */
+
+}
+
+.filtros-dropdow:hover{
+    background-color: transparent;
+    color: var(--primary-700, #322055);
+    border-color: transparent;
+}
+
+.filtros-dropdow::after{
+    color: #ED7004;
+}
+
+.btn-toolbar.youre-a-bunch-of-buttons{
+    justify-content: flex-end;
+}
+
+.btn-toolbar.youre-a-bunch-of-buttons button{
+    background-color: transparent;
+    color: var(--primary-700, #322055);
+    border-color: transparent;
+}
+
+.btn-toolbar.youre-a-bunch-of-buttons button:hover{
+    text-decoration: underline;
+}

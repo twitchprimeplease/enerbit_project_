@@ -12,9 +12,6 @@ import Tabs from 'react-bootstrap/Tabs';
 import Image from 'react-bootstrap/Image';
 
 
-
-
-
 function PerfilComponent() {
   return (
     <>
