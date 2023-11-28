@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles.css';
 import {Table, Form, Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 const ConfirmationFactura = () => {
@@ -49,7 +50,9 @@ const ConfirmationFactura = () => {
                             </tr>
                         </tbody>
                         </Table>
+                        <Link to='/Pagar/PayMethod'>
                         <Button variant='primary'>Seleccionar método de Pago</Button>
+                        </Link>
                     </div>
                 </div>
             </div>

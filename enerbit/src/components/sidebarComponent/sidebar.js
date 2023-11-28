@@ -3,21 +3,19 @@ import '../../App.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { SidebarData } from './sidebarData.js'
 import logoEnerbit from '../../images/Logo-enerBit 2.svg'
+import { Nav, Image} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
 
 function Sidebar() {
   return (
     <div className='Sidebar'>
-      <img src={logoEnerbit} alt='Logo Enerbit' />
+      <Image src={logoEnerbit} alt='Logo Enerbit' />
       <ul className='SidebarList'>
         {SidebarData.map((val, key)=>{
         return(
           <li key={key} 
-          className={`SidebarRow`}
-          // onClick={() => {window.location.pathname = val.link}}
-          >
-           
-           <NavLink to={val.link} className={({ isActive, isPending }) =>
+          className={`SidebarRow`}>
+          <NavLink to={val.link} className={({ isActive, isPending }) =>
                       isActive
                         ? "active"
                         : isPending
